@@ -85,7 +85,7 @@
             });
         });
         function getUserData(email) {
-            $.get('https://node-task-2-3f01.onrender.com/users?email=' + email, (data) => {
+            $.get('/api/users?email=' + email, (data) => {
                 alert(`User Info: ${JSON.stringify(data)}`);
             });
         }
